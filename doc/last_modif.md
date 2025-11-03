@@ -22,7 +22,7 @@ Implémentation : document_ai_processor.py pour Google Document AI (spécialisé
 Modification : gui.py avec 3ème radio button "Document AI (API, tableaux)"
 Configuration : Ajout variables d'environnement Document AI (DOCUMENT_AI_PROCESSOR_ID, DOCUMENT_AI_LOCATION, GOOGLE_CLOUD_PROJECT_ID)
 Configuration : Mise à jour requirements.txt (google-cloud-documentai)
-Configuration : Fichiers .env et .env.example avec config complète du processor Document AI (ID: e3ef773999ff0981, région: eu)
+Configuration : Fichiers .env et .env.example avec config complète du processor Document AI
 
 ---
 

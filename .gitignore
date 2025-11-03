@@ -33,9 +33,15 @@ debug/
 *.swo
 *~
 
-# Environment
+# Environment variables (credentials)
 .env
+.env.local
+
+# Google Cloud credentials (CRITIQUE - NE JAMAIS COMMITER)
 gitignore/
+*.json
+!package.json
+!tsconfig.json
 
 # Debug output
 debug/
