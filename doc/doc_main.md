@@ -78,7 +78,7 @@ app/processors/
 - Analyse de mise en page avancée
 
 **Configuration requise** (dans `.env`) :
-- `GOOGLE_CLOUD_PROJECT_ID` : ID du projet Google Cloud (ex: your_project_id)
+- `GOOGLE_CLOUD_PROJECT_ID` : ID du projet Google Cloud (ex: 123456789012)
 - `DOCUMENT_AI_PROCESSOR_ID` : ID du processor Document AI (ex: your_processor_id)
 - `DOCUMENT_AI_LOCATION` : Région du processor (ex: eu, us, asia)
 - `GOOGLE_APPLICATION_CREDENTIALS` : Chemin vers JSON service account (OBLIGATOIRE pour Document AI)
