@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+
+# Environment variables (credentials)
+.env
+.env.local
+
+# Google Cloud credentials (SENSIBLE - NE JAMAIS COMMITER)
+gitignore/
+*.json
+!package.json
+!tsconfig.json
+
+# Outputs et données de test
+inpouts image/
+output/
+debug/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

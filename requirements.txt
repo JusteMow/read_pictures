@@ -1,0 +1,8 @@
+opencv-python
+pytesseract
+pillow
+pandas
+python-dotenv
+google-cloud-vision
+google-cloud-documentai
+openai>=1.0 
