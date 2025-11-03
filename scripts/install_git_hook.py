@@ -9,7 +9,11 @@ from pathlib import Path
 import shutil
 import sys
 
-HOOK_CONTENT = """#!/usr/bin/env python3
+# Fix encodage Windows pour les emojis
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
+HOOK_CONTENT = """#!/usr/bin/env python
 \"\"\"
 Pre-commit hook Git - Vérifie les credentials avant chaque commit
 Installé automatiquement par scripts/install_git_hook.py
@@ -18,6 +22,17 @@ Installé automatiquement par scripts/install_git_hook.py
 import sys
 import subprocess
 from pathlib import Path
+import os
+
+# Fix encodage Windows
+if sys.platform == 'win32':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except:
+        pass
+
+# Trouver l'exécutable Python (python ou python3)
+PYTHON_EXE = sys.executable if sys.executable else 'python'
 
 # Chemin vers le script de vérification
 script_path = Path(__file__).parent.parent.parent / "scripts" / "check_credentials.py"
@@ -30,7 +45,7 @@ print("🔍 Vérification des credentials avant commit...")
 
 try:
     result = subprocess.run(
-        [sys.executable, str(script_path)],
+        [PYTHON_EXE, str(script_path)],
         capture_output=True,
         text=True
     )
