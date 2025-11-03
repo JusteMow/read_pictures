@@ -33,6 +33,14 @@ debug/
 *.swo
 *~
 
+# Environment
+.env
+gitignore/
+
+# Debug output
+debug/
+output/
+
 # OS
 .DS_Store
 Thumbs.db
@@ -40,3 +48,4 @@ desktop.ini
 
 # Logs
 *.log
+.env.example
